@@ -1,0 +1,16 @@
+***************
+*** 10,15 ****
+  import org.lwjgl.opengl.GL11;
+  
+  public class WorldVertexBufferUploader {
+     public void func_181679_a(WorldRenderer p_181679_1_) {
+        if(p_181679_1_.func_178989_h() > 0) {
+           VertexFormat vertexformat = p_181679_1_.func_178973_g();
+--- 10,16 ----
+  import org.lwjgl.opengl.GL11;
+  
+  public class WorldVertexBufferUploader {
++    @SuppressWarnings("incomplete-switch")
+     public void func_181679_a(WorldRenderer p_181679_1_) {
+        if(p_181679_1_.func_178989_h() > 0) {
+           VertexFormat vertexformat = p_181679_1_.func_178973_g();
