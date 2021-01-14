@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "command_block"
+    }
+  }
+}

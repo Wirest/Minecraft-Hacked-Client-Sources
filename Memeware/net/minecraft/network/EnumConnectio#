@@ -1,0 +1,19 @@
+***************
+*** 307,314 ****
+     }
+  
+     // $FF: synthetic method
+-    EnumConnectionState(int p_i46000_3_, Object p_i46000_4_) {
+-       this(p_i46000_1_, p_i46000_2_, p_i46000_3_);
+     }
+  
+     static {
+--- 307,314 ----
+     }
+  
+     // $FF: synthetic method
++    EnumConnectionState(String ignore1, int ignore2, int p_i46000_3_, Object p_i46000_4_) {
++       this(p_i46000_3_);
+     }
+  
+     static {

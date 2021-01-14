@@ -1,0 +1,25 @@
+***************
+*** 45,55 ****
+     }
+  
+     private EnumChatFormatting(String p_i46291_3_, char p_i46291_4_, int p_i46291_5_) {
+-       this(p_i46291_1_, p_i46291_2_, p_i46291_3_, p_i46291_4_, false, p_i46291_5_);
+     }
+  
+     private EnumChatFormatting(String p_i46292_3_, char p_i46292_4_, boolean p_i46292_5_) {
+-       this(p_i46292_1_, p_i46292_2_, p_i46292_3_, p_i46292_4_, p_i46292_5_, -1);
+     }
+  
+     private EnumChatFormatting(String p_i46293_3_, char p_i46293_4_, boolean p_i46293_5_, int p_i46293_6_) {
+--- 45,55 ----
+     }
+  
+     private EnumChatFormatting(String p_i46291_3_, char p_i46291_4_, int p_i46291_5_) {
++       this(p_i46291_3_, p_i46291_4_, false, p_i46291_5_);
+     }
+  
+     private EnumChatFormatting(String p_i46292_3_, char p_i46292_4_, boolean p_i46292_5_) {
++       this(p_i46292_3_, p_i46292_4_, p_i46292_5_, -1);
+     }
+  
+     private EnumChatFormatting(String p_i46293_3_, char p_i46293_4_, boolean p_i46293_5_, int p_i46293_6_) {

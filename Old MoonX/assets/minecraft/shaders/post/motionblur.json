@@ -1,0 +1,35 @@
+{
+    "targets": [
+        "swap",
+        "previous"
+    ],
+    "passes": [
+        {
+            "name": "motionblur",
+            "intarget": "minecraft:main",
+            "outtarget": "swap",
+            "auxtargets": [
+                {
+                    "name": "PrevSampler",
+                    "id": "previous"
+                }
+            ],
+            "uniforms": [
+                {
+                    "name": "MotionBlur",
+                    "values": [ 0.35, 0.35, 0.35 ]
+                }
+            ]
+        },
+        {
+            "name": "blit",
+            "intarget": "swap",
+            "outtarget": "previous"
+        },
+        {
+            "name": "blit",
+            "intarget": "swap",
+            "outtarget": "minecraft:main"
+        }
+    ]
+}

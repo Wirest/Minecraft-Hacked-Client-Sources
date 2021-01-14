@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "unlit_redstone_lamp"
+    }
+  }
+}

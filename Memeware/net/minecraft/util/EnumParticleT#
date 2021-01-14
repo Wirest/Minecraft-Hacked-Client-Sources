@@ -1,0 +1,17 @@
+***************
+*** 65,71 ****
+     }
+  
+     private EnumParticleTypes(String p_i46012_3_, int p_i46012_4_, boolean p_i46012_5_) {
+-       this(p_i46012_1_, p_i46012_2_, p_i46012_3_, p_i46012_4_, p_i46012_5_, 0);
+     }
+  
+     public static String[] func_179349_a() {
+--- 65,71 ----
+     }
+  
+     private EnumParticleTypes(String p_i46012_3_, int p_i46012_4_, boolean p_i46012_5_) {
++       this(p_i46012_3_, p_i46012_4_, p_i46012_5_, 0);
+     }
+  
+     public static String[] func_179349_a() {
