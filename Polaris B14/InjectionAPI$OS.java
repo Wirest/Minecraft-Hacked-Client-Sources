@@ -1,0 +1,10 @@
+public enum InjectionAPI$OS
+{
+  LINUX,  SOLARIS,  WINDOWS,  MACOS,  UNKNOWN;
+}
+
+
+/* Location:              C:\Users\suzjan\AppData\Roaming\.minecraft\versions\Polaris\Polaris.jar!\InjectionAPI$OS.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       0.7.1
+ */
