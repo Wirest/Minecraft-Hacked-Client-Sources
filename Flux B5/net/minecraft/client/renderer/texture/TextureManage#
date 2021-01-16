@@ -1,0 +1,47 @@
+***************
+*** 57,69 ****
+  
+     public boolean func_110579_a(ResourceLocation p_110579_1_, final ITextureObject p_110579_2_) {
+        boolean var3 = true;
+- 
+        try {
+           ((ITextureObject)p_110579_2_).func_110551_a(this.field_110582_d);
+        } catch (IOException var8) {
+           field_147646_a.warn("Failed to load texture: " + p_110579_1_, var8);
+-          p_110579_2_ = TextureUtil.field_111001_a;
+-          this.field_110585_a.put(p_110579_1_, p_110579_2_);
+           var3 = false;
+        } catch (Throwable var9) {
+           CrashReport var5 = CrashReport.func_85055_a(var9, "Registering texture");
+--- 57,70 ----
+  
+     public boolean func_110579_a(ResourceLocation p_110579_1_, final ITextureObject p_110579_2_) {
+        boolean var3 = true;
++       ITextureObject p_110579_2_2 = p_110579_2_;
++       
+        try {
+           ((ITextureObject)p_110579_2_).func_110551_a(this.field_110582_d);
+        } catch (IOException var8) {
+           field_147646_a.warn("Failed to load texture: " + p_110579_1_, var8);
++          p_110579_2_2 = TextureUtil.field_111001_a;
++          this.field_110585_a.put(p_110579_1_, p_110579_2_2);
+           var3 = false;
+        } catch (Throwable var9) {
+           CrashReport var5 = CrashReport.func_85055_a(var9, "Registering texture");
+***************
+*** 80,86 ****
+           throw new ReportedException(var5);
+        }
+  
+-       this.field_110585_a.put(p_110579_1_, p_110579_2_);
+        return var3;
+     }
+  
+--- 81,87 ----
+           throw new ReportedException(var5);
+        }
+  
++       this.field_110585_a.put(p_110579_1_, p_110579_2_2);
+        return var3;
+     }
+  

@@ -1,0 +1,66 @@
+[C]§f===============
+[C]§eMinecraft Credits
+[C]§f===============
+
+§fCreated by:
+§f			Markus Persson
+
+§fGame design, programming and graphics:
+§f			Markus Persson
+§f			Jens Bergensten
+§f			Nathan Adams
+
+§fProgramming:
+§f			Erik Broes
+
+§fMusic and sound:
+§f			Daniel Rosenfeld
+
+§fIngame artwork and paintings:
+§f			Kristoffer Zetterstrand
+
+§fEnd game narrative:
+§f			Julian Gough
+
+§fWebsite development:
+§f			Tobias Möllstam
+§f			Daniel Frisk
+§f			Leonard Axelsson
+§f			Jens Bergensten
+§f			Markus Persson
+
+§fLogo and promotional artwork:
+§f			Markus Toivonen
+
+§fBusiness and administration:
+§f			Carl Manneh
+§f			Daniel Kaplan
+
+§fDirector of fun:
+§f			Lydia Winters
+
+§fNumber crunching and statistics:
+§f			Patrick Geuder
+
+§fAdditional programming:
+§f			Paul Spooner
+§f			Ryan 'Scaevolus' Hitchman
+§f			Elliot 'Hippoplatimus' Segal
+
+§fDevelopers of Mo' Creatures (horses etc):
+§f			John Olarte (DrZhark)
+§f			Kent Christian Jensen
+§f			Dan Roque
+
+§fTechnologies used:
+§f			Java by Oracle
+§f			LWJGL by many talented people
+§f			"3d Sound System" by Paul Lamb
+§f			JOrbis by JCraft
+
+
+
+
+
+
+§f"Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover." §f- Unknown
