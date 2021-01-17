@@ -1,0 +1,39 @@
+Summary for /www/javadecompilers/app/public/data/12.01.21/c44a0c55922f353fcbdf1e6890652015/delta-b3.7-deobf-cleaned-name.jar
+Decompiled with CFR 0.150
+
+
+delta.Class192
+----------------------------
+
+_fighting(java.io.File )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [0[TRYBLOCK]], but top level block is 8[UNCONDITIONALDOLOOP]
+
+
+delta.Class2
+----------------------------
+
+transform(java.lang.String byte[] boolean )
+  Exception : org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.SwitchStringRewriter$TooOptimisticMatchException
+
+
+delta.module.modules.ESP
+----------------------------
+
+oVvw(me.xtrm.delta.api.event.events.render.EventRender3D )
+  Exception : org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.SwitchStringRewriter$TooOptimisticMatchException
+
+
+delta.module.modules.HUD
+----------------------------
+
+u9Y5(me.xtrm.delta.api.event.events.render.EventRender2D )
+  Exception : org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.SwitchStringRewriter$TooOptimisticMatchException
+
+
+delta.module.modules.TPAura
+----------------------------
+
+UAmL(me.xtrm.delta.api.event.events.move.EventMotion )
+  Exception : org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.SwitchStringRewriter$TooOptimisticMatchException
+acca()
+  Exception : org.benf.cfr.reader.bytecode.analysis.opgraph.op4rewriters.SwitchStringRewriter$TooOptimisticMatchException
