@@ -1,0 +1,74 @@
+TabGui->Rectangle->Alpha Slider->0.699999988079071
+TabGui->Rectangle->Alpha Background->0.5
+TabGui->Rectangle->Rainbow->false
+TabGui->Rectangle->Gradient->false
+TabGui->Rectangle->Slider Color->-1283532545
+TabGui->Rectangle->Background Color->-2147483648
+TabGui->Size->X-Scale->0.0
+TabGui->Size->Y-Scale->4.0
+TabGui->Position->X-Add->0.0
+TabGui->Position->Y-Add->12.0
+TabGui->Font->Shadow->true
+TabGui->Font->Shadow-X->1.0
+TabGui->Font->Change selected Font Color->false
+TabGui->Font->Shadow-Y->1.0
+TabGui->Font->Font Size->18.0
+TabGui->Font->Font->2
+TabGui->Font->Selected Font Color->-15597824
+TabGui->Border->Alpha->1.0
+TabGui->Border->Enable Border->false
+TabGui->Border->Border Size->0.5
+TabGui->Border->Border Color->-16777216
+TabGui->Border->Smooth->false
+TabGui->Slider Border->Alpha->1.0
+TabGui->Slider Border->Enable Border->true
+TabGui->Slider Border->Border Size->0.5
+TabGui->Slider Border->Border Color->-16777216
+TabGui->Slider Border->Smooth->true
+TabGui->Other->Enable->true
+Module List->Font->Y Add->-2.0
+Module List->Font->Font->4
+Module List->Font->Color->0
+Module List->Font->Font Color->-16725761
+Module List->Font->Font Size->17.0
+Module List->Font->Shadow->true
+Module List->Font->Shadow-X->0.5
+Module List->Font->Shadow-Y->0.5
+Module List->Font->Sorted->true
+Module List->Font->Background Alpha->0.3499999940395355
+Module List->Border->Alpha->1.0
+Module List->Border->Enable Border->false
+Module List->Border->Border Size->0.5
+Module List->Border->Border Color->-16777214
+Module List->Border->Border Mode->0
+Module List->Border->Border Color->2
+Hotbar->Date->Enable->true
+Hotbar->Date->Position->1
+Hotbar->Date->Font Size->18.0
+Hotbar->Date->Font->2
+Hotbar->Date->Use Shadow->true
+Hotbar->Date->Shadow Size->0.5
+Hotbar->Date->Font Color->-1
+Hotbar->Time->Enable->true
+Hotbar->Time->Position->1
+Hotbar->Time->Font Size->15.0
+Hotbar->Time->Font->2
+Hotbar->Time->Use Shadow->true
+Hotbar->Time->Shadow Size->0.5
+Hotbar->Time->Font Color->-1
+Hotbar->Ping->Enable->true
+Hotbar->Ping->Position->0
+Hotbar->Ping->Font Size->15.0
+Hotbar->Ping->Font->2
+Hotbar->Ping->Use Shadow->true
+Hotbar->Ping->Shadow Size->0.5
+Hotbar->Ping->Font Color->-1
+Hotbar->Location->Enable->true
+Hotbar->Location->Position->0
+Hotbar->Location->Font Size->18.0
+Hotbar->Location->Font->2
+Hotbar->Location->Use Shadow->true
+Hotbar->Location->Shadow Size->0.5
+Hotbar->Location->Font Color->-1
+Hotbar->Other->Enable->true
+Hotbar->Other->Flat PlayerStats->false

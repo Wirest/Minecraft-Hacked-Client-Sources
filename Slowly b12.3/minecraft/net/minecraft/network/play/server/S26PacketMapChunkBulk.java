@@ -1,0 +1,91 @@
+package net.minecraft.network.play.server;
+
+import net.minecraft.network.play.*;
+import java.util.*;
+import net.minecraft.world.chunk.*;
+import java.io.*;
+import net.minecraft.network.*;
+
+public class S26PacketMapChunkBulk implements Packet<INetHandlerPlayClient>
+{
+    private int[] xPositions;
+    private int[] zPositions;
+    private S21PacketChunkData.Extracted[] chunksData;
+    private boolean isOverworld;
+    
+    public S26PacketMapChunkBulk() {
+    }
+    
+    public S26PacketMapChunkBulk(final List<Chunk> chunks) {
+        final int i = chunks.size();
+        this.xPositions = new int[i];
+        this.zPositions = new int[i];
+        this.chunksData = new S21PacketChunkData.Extracted[i];
+        this.isOverworld = !chunks.get(0).getWorld().provider.getHasNoSky();
+        for (int j = 0; j < i; ++j) {
+            final Chunk chunk = chunks.get(j);
+            final S21PacketChunkData.Extracted s21packetchunkdata$extracted = S21PacketChunkData.func_179756_a(chunk, true, this.isOverworld, 65535);
+            this.xPositions[j] = chunk.xPosition;
+            this.zPositions[j] = chunk.zPosition;
+            this.chunksData[j] = s21packetchunkdata$extracted;
+        }
+    }
+    
+    @Override
+    public void readPacketData(final PacketBuffer buf) throws IOException {
+        this.isOverworld = buf.readBoolean();
+        final int i = buf.readVarIntFromBuffer();
+        this.xPositions = new int[i];
+        this.zPositions = new int[i];
+        this.chunksData = new S21PacketChunkData.Extracted[i];
+        for (int j = 0; j < i; ++j) {
+            this.xPositions[j] = buf.readInt();
+            this.zPositions[j] = buf.readInt();
+            this.chunksData[j] = new S21PacketChunkData.Extracted();
+            this.chunksData[j].dataSize = (buf.readShort() & 0xFFFF);
+            this.chunksData[j].data = new byte[S21PacketChunkData.func_180737_a(Integer.bitCount(this.chunksData[j].dataSize), this.isOverworld, true)];
+        }
+        for (int k = 0; k < i; ++k) {
+            buf.readBytes(this.chunksData[k].data);
+        }
+    }
+    
+    @Override
+    public void writePacketData(final PacketBuffer buf) throws IOException {
+        buf.writeBoolean(this.isOverworld);
+        buf.writeVarIntToBuffer(this.chunksData.length);
+        for (int i = 0; i < this.xPositions.length; ++i) {
+            buf.writeInt(this.xPositions[i]);
+            buf.writeInt(this.zPositions[i]);
+            buf.writeShort((short)(this.chunksData[i].dataSize & 0xFFFF));
+        }
+        for (int j = 0; j < this.xPositions.length; ++j) {
+            buf.writeBytes(this.chunksData[j].data);
+        }
+    }
+    
+    @Override
+    public void processPacket(final INetHandlerPlayClient handler) {
+        handler.handleMapChunkBulk(this);
+    }
+    
+    public int getChunkX(final int p_149255_1_) {
+        return this.xPositions[p_149255_1_];
+    }
+    
+    public int getChunkZ(final int p_149253_1_) {
+        return this.zPositions[p_149253_1_];
+    }
+    
+    public int getChunkCount() {
+        return this.xPositions.length;
+    }
+    
+    public byte[] getChunkBytes(final int p_149256_1_) {
+        return this.chunksData[p_149256_1_].data;
+    }
+    
+    public int getChunkSize(final int p_179754_1_) {
+        return this.chunksData[p_179754_1_].dataSize;
+    }
+}
