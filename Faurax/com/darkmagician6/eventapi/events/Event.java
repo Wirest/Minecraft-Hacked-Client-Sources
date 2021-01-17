@@ -1,0 +1,22 @@
+package com.darkmagician6.eventapi.events;
+
+import com.darkmagician6.eventapi.EventManager;
+
+/**
+ * The most basic form of an event.
+ * You have to implement this interface in order for the EventAPI to recognize the event.
+ *
+ * @author DarkMagician6
+ * @since July 30, 2013
+ */
+public interface Event{
+
+	public default void call(){
+		EventManager.call(this);
+	}
+	
+	public static enum State
+	{
+	  PRE,  POST;
+	}
+}
