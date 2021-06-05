@@ -1,5 +1,7 @@
 
  # __**Minecraft Hacked Client Sources**__
+ 
+ ## IMPORTANT: Original Repository: https://github.com/chocopie69/Minecraft-Hacked-Client-Sources. Please check it for new updates.
 
 > **Info**
 - Clients Amount: 39
@@ -46,7 +48,7 @@
 > * WeepCraft 0.2
 > * Xatz 0.9b1
 
-***`If you have any client's sources, feel free to dm me, my discord is chocopie#7690 and it'll be added`***
+***`If you have any client's sources, feel free to dm me, my discord is chocopie#8543 and it'll be added`***
 
 ***happy skidding!***
 
